@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1>Example 1 using rowspan</h1>
+  <table border = 1 cellspacing = 0 cellpadding = 16>
+	
+	<tr>
+		<th rowspan = 3>Name</th><th>Age</th>
+	</tr>
+
+	<tr>
+		<td colspan = 2>35</td> 
+	</tr>
+	
+	<tr>
+		<td>67</td>
+	</tr>
+	<tr>
+		<td colspan = 2>Total Rows 3</td>
+	</tr>
+  </table>
+  
+    <h1>Example 2 using colspan</h1>
+    <table border = 1 cellspacing = 0 cellpadding = 16>
+    
+    <tr>
+      <th >Name</th><th colspan = 2>Details</th>
+    </tr>
+
+    <tr>
+      <td>Name : John</td> <td>Age : 25</td> <td>City : New York</td> 
+    </tr>
+    
+    <tr>
+      <td>Name : James</td> <td>Age : 31</td> <td>City : Chichago</td> 
+    </tr>
+    
+    
+    <tr>
+      <td colspan = 3 align="center">rowspan all over the column</td>
+    </tr>
+    
+  </table>
+  
+  <br></br>
+  
+  <h1>Example 3 using colspan and rowspan</h1>
+  <table border = 1 cellspacing = 0 cellpadding = 16>
+	
+	<tr>
+		<th colspan =3>Project Information</th>
+	</tr>
+
+	<tr>
+		<td rowspan = "3">John</td> <td>Task 1</td> <td>Completed</td> 
+	</tr>
+	
+	<tr>
+		<td>Task 2</td> <td>In progress</td> 
+	</tr>
+	
+	
+	<tr>
+		<td>Task 3</td> <td>Pending</td> 
+	</tr>
+	
+	<tr>
+		<td colspan =3 align = "center">End of the data</td>
+	</tr>
+  </table>
+  
+  <br></br>
+  
+  <h1>Example 4 using colspan and rowspan for complex problem</h1>
+  <table border = 1 cellspacing = 0 cellpadding = 16>
+	
+	<tr>
+		<th colspan =3>Project Information</th>
+	</tr>
+
+	<tr>
+		<td rowspan = "3">John</td> <td>Task 1</td> <td>Completed</td> 
+	</tr>
+	
+	<tr>
+		<td>Task 2</td> <td>In progress</td> 
+	</tr>
+	
+	
+	<tr>
+		<td>Task 3</td> <td>Pending</td> 
+	</tr>
+	
+	<tr>
+		<td colspan =3 align = "center">End of the data</td>
+	</tr>
+  </table>
+  
+</body>
+</html>
