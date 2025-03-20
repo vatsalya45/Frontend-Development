@@ -1,0 +1,24 @@
+<!-- Creating an onject using Object Literal-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>object literals</title>
+</head>
+<body>
+  <h1> object with properties and methods </h1>
+  <script>
+    var emp = { "id" : 24, name : "vatsalya" , salary : 9000 , address : "rewa",
+                "getSalary":function(){
+                    document.write(`Salary is `+emp.salary);
+                },
+    };
+    document.write("Id	:"+ emp.id +"<br>");
+    document.write("Name	:"+ emp.name +"<br>");
+    document.write("Address	:"+ emp.address +"<br>");
+    document.write("Salary is	:"+ emp.getSalary() +"<br>");
+    document.write(emp+"<br><br>");
+  </script>
+</body>
+</html>
