@@ -1,0 +1,38 @@
+<!-- Using Object Literlas
+Object literals			
+Object literals are represented as curly braces {}, which can include properties and methods.
+The property and values are separated with:symbol		
+The method-name and body are separated with :symbol 
+-->
+<Html>
+  <head>
+  <title>object literals</title>
+  </head>
+  <body>
+  <h1> object with properties and methods </h1>
+  <script>
+  var stu1= { "id" : 1, name : "ram", marks: 30, "getResult": function() {
+                if(stu1.marks>=40)
+                   return "Pass";
+                  else
+                   return "Fail";
+                }, 
+        };
+  
+    document.write("Id	:"+ stu1.id +"<br>");
+    document.write("Name	:"+ stu1.name +"<br>");
+    document.write("Marks	:"+ stu1.marks +"<br>");
+    document.write("Result is	:"+ stu1.getResult() +"<br>");
+    document.write(stu1+"<br><br>");
+  </script>
+  </body>
+  </html>	
+  <!--
+  syntax:
+  const refname={
+                “property”:value,property:value, ...,
+				        “method-name”:function() {body},
+				        method-name(){body} 
+  }
+  -->	
+  
