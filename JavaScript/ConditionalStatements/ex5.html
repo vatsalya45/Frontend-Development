@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let a = prompt(`Enter an year`);
+    if( a%4==0 && a%400==0 || a%100 != 0)
+    {
+
+      document.writeln(`A leap year.`)
+    }  
+    else{
+      document.writeln(`Not Leap year.`)
+    }
+
+  </script>
+</body>
+</html>
+<!--
+==========================================================================================================
+
+Que 5 : Write a 'JavaScript' program to check whether a year is leap year or not.
+-------
+
+Sample input  : let year = 2020 || let year = 2000 || let year = 2004
+Sample output : leap year
+
+Sample input  : let year = 2001 || let year = 2006
+Sample output : not leap year
+
+==========================================================================================================
+-->
