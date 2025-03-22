@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let cp = prompt(`Enter the cost price`)
+    let sp = prompt(`Enter the selling price`)
+    let vat = sp*(5/100), tax = sp*0.10;
+    let netSp = sp-(vat+tax);
+    let profit = netSp-cp;
+
+    if(profit > 0){
+      document.writeln(`Maked profit of ${profit} <br>`);
+    }
+    else{
+      document.writeln(`Maked loss of ${profit} <br>`);
+    }
+    document.writeln(`Cost profit is ${cp}<br>Selling price is ${sp} <br>Net selling price is ${netSp}`);
+  </script>
+</body>
+</html>
+<!--
+==========================================================================================================
+
+Que 7 : Rajesh bought an old TV for 3500 RS. and Rajesh sold the TV for 7000 RS, which includes a 5% VAT and a 10% tax on the selling 	price. 
+-------  Calculate the net selling price by removing VAT and tax.
+         Determine whether Rajesh made a profit or incurred a loss, and calculate the respective amount.
+
+         Program Requirements:
+
+         The program should read the cost price and the total selling price (including VAT and tax).
+         The program should calculate the net selling price by removing VAT and tax.
+         The program should compare the net selling price with the cost price to determine profit or loss.
+         The program should display the amount of profit or loss.
+
+Sample input  : Enter the cost price of the TV: 3500
+                Enter the selling price of the TV (including VAT and tax): 7000
+Sample output : You made a profit of Rs. 2450.00
+
+-->
