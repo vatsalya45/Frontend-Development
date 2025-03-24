@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: aquamarine;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <h2>
+    Enter your choice
+  </h2>
+  <div>
+    <p>
+      1) For Addition <br>
+      2) For Subtraction<br>
+      3) For Multiplication<br>
+      4) For Divide<br>
+      5) For Modulus<br>
+    </p>
+  </div>
+  <button onclick="displayMessage()">Operation</button>
+  <script>
+    let num1 = parseInt(prompt(`Enter the first number :`));
+    let num2 = parseInt(prompt(`Enter the second number :`));
+
+    function displayMessage() {
+     
+     let op = parseInt(prompt("Enter a choice"));
+      switch(op){
+        case 1:document.writeln("Result is "+(num1+num2));
+          break;
+        case 2: document.writeln("Result is "+(num1-num2));
+          break;
+        case 3: document.writeln("Result is "+(num1*num2));
+          break;
+        case 4: document.writeln("Result is "+(num1/num2));
+          break;
+        case 5: document.writeln("Result is "+(num1%num2));
+          break;
+        default : document.writeln("Invalid number");
+      }
+    }
+    
+  </script>
+</body>
+</html>
+<!--
+Que 2 :
+=======
+
+Write a 'JavaScript' program to perform a arithmetic operation on two numbers by using Switch Case. 
+Take the operators(+,-,*,/,%) as cases and take the input from the user that what kind of operation user want to do on two number.
+
+
+Sample input :
+
+Enter num1 :10
+Enter num2 :20
+Enter operation : *
+
+
+Sample output :
+
+Multiplication is :200
+
+-->
